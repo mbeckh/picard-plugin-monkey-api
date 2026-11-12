@@ -48,7 +48,7 @@ if TYPE_CHECKING:
         Args:
             target: The module or type to patch.
             wrapped: The function or property to patch.
-            priority: Wrapper execution order. Higher values execute first.
+            priority: Wrapper execution order from highest on the outside to lowest one the inside.
             property_type: Property accessor to patch (fget, fset or fdel).
 
         Raises:
@@ -68,7 +68,7 @@ if TYPE_CHECKING:
         Args:
             target: The module or type to patch.
             wrapped: The function or property to patch.
-            priority: Wrapper execution order. Higher values execute first.
+            priority: Wrapper execution order from highest on the outside to lowest one the inside.
             property_type: Property accessor to patch (fget, fset or fdel).
 
         Raises:
